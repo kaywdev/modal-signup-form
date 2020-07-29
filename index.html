@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Signup Form</title>
+</head>
+<body>
+    <h2>Modal Signup Form</h2> 
+    <div class="btn-wrapper"><a href="#" class="button" id="signup">Sign Up Now</a></div>
+
+    <div class="bg-modal"> 
+        <div class="modal-content">
+            <div class="close">+</div>
+                <form action=""> 
+                    <div class="container"> 
+                        <label><b>Name</b></label> 
+                        <input type="text" placeholder="Enter Name" name="name" required> 
+
+                        <label><b>Email</b></label> 
+                        <input type="text" placeholder="Enter Email" name="email" required> 
+        
+                        <label><b>Password</b></label> 
+                        <input type="password" placeholder="Enter Password" name="psw" required> 
+        
+                        <div class="btn-wrapper modal-btn"><a href="" class="button">Submit</a></div>
+                        </div> 
+                    </div> 
+                </form>
+        </div> 
+    </div> 
+
+    <!--close the modal by just clicking outside of the modal-->
+    <script>  
+
+        document.getElementById('signup').addEventListener("click", function(){
+            document.querySelector('.bg-modal').style.display= "flex";
+        });
+
+        document.querySelector('.close').addEventListener("click", function(){
+            document.querySelector('.bg-modal').style.display = "none";
+        })
+       
+    </script> 
+    
+</body>
+</html>

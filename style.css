@@ -1,0 +1,85 @@
+.button{
+    min-width: 120px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 28px; 
+    background-color: #1686d9;
+    border: 2px solid white;
+    border-radius: 30px;
+    display: inline-block;
+    text-align: center;	
+}
+
+.button:hover {
+    background-color: white;
+    color: #1686d9;
+    border: 2px solid #1686d9;
+  }
+
+.modal-btn{
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*define the modal’s background*/       
+.bg-modal { 
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;  
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding-top: 60px; 
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    z-index: 1; 
+    display: none;
+} 
+.modal-content{
+    width: 300px;
+    max-height: 400px;
+    background-color: #fefefe; 
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    position: relative;
+}
+    /*add full-width input fields*/ 
+    input[type=text], 
+    input[type=password] { 
+        width: 100%; 
+        padding: 12px 20px; 
+        margin: 8px 0; 
+        display: inline-block; 
+        border: 2px solid #ccc; 
+        box-sizing: border-box; 
+    } 
+    
+    /*add padding to container elements*/ 
+    .container { 
+        padding: 50px 16px;     
+    } 
+
+ 
+    /*define the close button*/ 
+      
+    .close { 
+        position: absolute; 
+        right: 15px; 
+        top: 0; 
+        color: #000; 
+        font-size: 42px; 
+        font-weight: bold; 
+        transform: rotate(45deg);
+        cursor: pointer;
+    } 
+    /*define the close hover and focus effects*/ 
+    .close:hover, 
+    .close:focus { 
+        color: #1686d9; 
+        cursor: pointer; 
+    } 
+      
+
+  
